@@ -4,7 +4,8 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - mvn clean install
+      - npm install
+      - npm run build
   post_build:
     commands:
       - echo Build completed successfully
